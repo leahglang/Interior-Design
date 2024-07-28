@@ -1,0 +1,172 @@
+a{
+    color: #46536d;
+    text-decoration: none;
+}
+#logo{
+    width:10%;
+    height:10% ;
+    float: left;
+}
+button{
+    background-color: Transparent;
+    border: none;
+}
+#menuePicture{
+    widows: 40px;
+    height: 40px;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    justify-content: space-around;
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 35px;
+    font-family: Caviar Dreams;
+    color: #46536d; 
+}
+.nav{
+    display: none;
+}
+#menu{
+    width:4%;
+    height:4%;
+    display: inline;
+}
+
+#header{
+    background-image: url("../image/home2.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+    float: center;
+    width:100%;
+    height:95vh;
+}
+
+#slogen{
+    font-family: Segoe Script;
+    color: #46536d;
+    font-size: 400%;
+    text-align: center;
+}
+#phone{
+    font-family: Caviar Dreams;
+    font-weight: bold;
+    color: #b99482;
+    background-color: #c3c5c7;
+    text-align: center;
+    font-size: x-large;
+    height: 14vh;
+    padding: 1%;
+}
+.marquee{
+    widows: 40vh;
+    height: 50vh;
+}
+footer{
+    font-size: larger;
+    height: 5vw;
+    background: #b99482;
+    color: #46536d;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+}
+#footerIcons{
+    display: flex;   
+}
+#footerText{
+    display: flex;
+    font-family: Candara Light;
+}
+a:link{
+    color: #46536d; 
+}
+a:hover{
+    color: #b99482 !important;
+    text-decoration: none;
+} 
+
+
+
+@media only screen and (max-width: 900px){
+    .icon{
+        width: 30px;
+        height: 30px;
+    }
+    #logo{
+        width:12%;
+        height:9% ;
+        float: left;
+    }
+    #slogen{
+        font-size: 350%;
+    }
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .navbar{
+        grid-template-columns: auto;
+        display: none;
+    }
+    .navsmall1{
+        display:none;
+        position: absolute;
+        min-width: 160px;  
+        opacity: 0.7;
+    }
+    .nav:hover .navsmall1{
+        display: block !important;
+    }
+   
+    .navsmall1 a{
+        display: block;
+        color:  #46536d;
+        text-decoration: none;
+        font-size: 20px;
+        background-color: #b99482;
+        margin-top: 5px;
+    }
+    .navsmall1 a:hover{
+        color: #c3c5c7;
+    }
+
+    .nav{
+        display: inline;
+        width: 10%;
+        top: 11px;   
+    }
+    
+    #header{
+        background-image:url("../image/home2.jpg");
+        float: right top;
+        background-position: left top;
+        width: 100vw;
+        height:45vw;        
+    }
+    #slogen{
+        font-size: 240%;
+    }
+    #phone{
+        font-size: large;
+    }
+    #logo{
+        width:10%;
+        height:10% ;
+        float: left;
+    }
+    footer{
+        height: 10vh;
+        font-size: medium;
+    }
+
+    
+}

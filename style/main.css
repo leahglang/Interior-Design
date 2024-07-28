@@ -1,0 +1,181 @@
+a{
+  color: #46536d;
+  text-decoration: none;
+}
+.tit_des{
+  font-family: Candara;
+  color: #c3c5c7;
+  text-align: center;
+  margin: 10%;
+  font-size: 300%;
+}
+body{
+  color: #46536d;
+  text-decoration: none;
+}
+
+a:link{
+    color: #46536d; 
+  }
+  #logo{
+    width:7%;
+    height:7% ;
+    float: left;
+}
+
+  .navbar{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
+    justify-content: space-around;
+    text-align: center;
+    font-size: xx-large;
+    padding-top: 35px;
+    font-family: Caviar Dreams;
+    color: #46536d;
+    background-color:white;
+  }
+.nav{
+    display: none;
+}
+button{
+  background-color: Transparent;
+  border: none;
+}
+#menuePicture{
+  widows: 60px;
+  height: 60px;
+}
+#description{
+  text-align: center;
+  font-size: large;
+  float: center;
+  border: #b99482;
+  padding: 5%;
+  border-radius: 10px;
+  border-style: solid;
+  font-family: Candara Light;
+}
+  
+  a:hover{
+    color: #c3c5c7;
+    text-decoration: none;
+  }
+  
+.galery{
+    display: grid;
+    width: 40% ;
+    height: 100% ;
+    margin: 10px ;
+    -webkit-transform: scale(1);
+	  transform: scale(1);
+	  -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    border-radius: 25px;
+}
+.galery:hover{
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+#room{
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+#return{
+  text-align: end;
+  margin: 10%;
+}
+div#return button{
+  background-color: #b99482;
+  border-radius: 3px;
+  border: #c3c5c7;
+}
+#back{
+  font-size: x-large;
+}
+footer{
+  font-size: larger;
+  height: 5vw;
+  background: #b99482;
+  color: #46536d;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
+}
+.icon{
+  width: 50px;
+  height: 50px;
+  justify-content: space-between;
+}
+#footerIcons{
+  display: flex;   
+}
+#footerText{
+  display: flex;
+  font-family: Candara Light;
+}
+
+@media only screen and (max-width: 900px){
+  .icon{
+      width: 30px;
+      height: 30px;
+  }
+  #logo{
+    width:12%;
+    height:9% ;
+}
+}
+
+  @media only screen and (max-width: 600px){
+    .navbar{
+        grid-template-columns: auto;
+        display: none;
+    }
+    .navsmall1{
+        display:none;
+        position: absolute;
+        min-width: 160px;  
+        opacity: 0.7;
+    }
+    .nav:hover .navsmall1{
+        display: block !important;
+    }
+   
+    .navsmall1 a{
+        display: block;
+        color:  #46536d;
+        text-decoration: none;
+        font-size: 20px;
+        background-color: #b99482;
+        margin-top: 5px;
+    }
+    .navsmall1 a:hover{
+        color: #c3c5c7 !important;
+    }
+
+    .nav{
+        display: inline;
+        width: 10%;
+        top: 11px;   
+    }
+    #logo{
+      width: 15%;
+      height: 15%;
+    }
+    .galery{
+      width: 80%;
+    }
+    #description{
+      width: 80%;
+    }
+
+    footer{
+      height: 10vh;
+      font-size: medium;
+    }
+    iframe{
+      display: none;
+    }
+  }
